@@ -145,3 +145,37 @@ header.homepage{
 	}
 	
 }
+
+
+label {
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 30em;
+	margin-left: initial;
+	width: 50%;
+  }
+  
+  #submit_button {
+	background-color: #B22222;
+	height: 30px;
+	width: 10%;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-left: 10em;
+	margin-left: auto;
+	width: 60%;
+	margin-left: 5em;
+	border-radius: 50px;
+  }
+  
+  input, textarea {
+	background-color: #D3D3D3;
+	color: #2F4F4F;
+	width: 250px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 2px 2px #696969;
+
+  }
+
+
+  
