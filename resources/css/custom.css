@@ -118,7 +118,7 @@ header.homepage{
 	background-position: center;
 }
 
-.card{
+.card.head{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -127,6 +127,20 @@ header.homepage{
 	background-color: transparent;
 	text-align: center;
 }
+
+.dropdown-menu:not(.guest){
+	left: -2%;
+}
+
+.index.card{
+	border-radius: 0.75em;
+	margin: 1em;
+}
+
+.dropdown-menu.guest{
+	left: -75%;
+}
+
 
 
 @media (min-width: 1200px){
