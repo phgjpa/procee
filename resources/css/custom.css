@@ -153,21 +153,18 @@ label {
 	padding-left: 30em;
 	margin-left: initial;
 	width: 50%;
+
   }
   
   #submit_button {
-	background-color: #B22222;
-	height: 30px;
-	width: 10%;
-	color: #FFFFFF;
-	font-weight: bold;
-	padding-left: 10em;
-	margin-left: auto;
-	width: 60%;
-	margin-left: 5em;
-	border-radius: 50px;
+	left: 50%;
+    position: fixed;
+    background-color: #B22222;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: auto;
+    border-radius: 50px;
   }
-  
   input, textarea {
 	background-color: #D3D3D3;
 	color: #2F4F4F;
@@ -175,7 +172,11 @@ label {
 	margin-bottom: 10px;
 	box-shadow: 5px 5px 2px 2px #696969;
 
+
   }
-
-
+footer{
+	padding-left: 40em;
+	padding-top: 15em;
+	
+}
   
