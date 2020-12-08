@@ -138,9 +138,14 @@ label {
   #submit_button {
 	background-color: #B22222;
 	height: 30px;
-	width: 20%;
+	width: 10%;
 	color: #FFFFFF;
 	font-weight: bold;
+	padding-left: 10em;
+	margin-left: auto;
+	width: 60%;
+	margin-left: 5em;
+	border-radius: 50px;
   }
   
   input, textarea {
