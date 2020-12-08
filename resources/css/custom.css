@@ -110,6 +110,25 @@ body {
 .navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
 	background: transparent !important;
 }
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/torta.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.card{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	background-color: transparent;
+	text-align: center;
+}
+
+
 @media (min-width: 1200px){
 	.form-inline .input-group {
 		width: 300px;
@@ -124,6 +143,7 @@ body {
 	.input-group {
 		width: 100%;
 	}
+	
 }
 
 
