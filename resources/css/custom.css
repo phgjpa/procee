@@ -144,11 +144,5 @@ header{
 	.input-group {
 		width: 100%;
 	}
-	.card{
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		background-color: #f44336;
-	}
+	
 }
