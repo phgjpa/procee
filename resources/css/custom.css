@@ -47,7 +47,7 @@ body {
 	position: absolute;
 	right: 0;
 	z-index: 9;
-	padding: 7px;
+	padding: 15px;
 	height: 100%;
 }
 .search-box i {
@@ -125,6 +125,7 @@ header.homepage{
 	transform: translate(-50%,-50%);
 	color: #fff;
 	background-color: transparent;
+	border: transparent;
 	text-align: center;
 }
 
@@ -189,9 +190,8 @@ label {
 
   }
 footer{
-	padding-left: 40em;
-	padding-top: 15em;
-	
+	width: 100%;
+    text-align: center;
 }
   
 
@@ -221,10 +221,6 @@ h4{
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
-form {
-	border: 3px solid #f1f1f1;
-
-}
 
 
 input[type=text], input[type=password] {
@@ -236,7 +232,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+/* button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -244,7 +240,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-}
+} */
 
 button:hover {
   opacity: 0.8;
