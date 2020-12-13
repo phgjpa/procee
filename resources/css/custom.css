@@ -25,8 +25,8 @@ body {
 .navbar .navbar-brand {
 	color: #555;
 	padding-left: 0;
-	padding-right: 50px;
 	font-family: 'Merienda One', sans-serif;
+	margin-right: 0!important;
 }
 .navbar .navbar-brand i {
 	font-size: 20px;
@@ -110,9 +110,20 @@ body {
 .navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
 	background: transparent !important;
 }
-
+.navbar-nav{
+	padding-left: 50px;
+}
+.banner{
+	background-image: url(../images/banner.PNG);
+	background-size: cover;
+	background-position: center;
+	padding-right:2.5px
+}
+.maps{
+	padding-left: 2.5px;
+}
 header.homepage{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/torta.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/torta.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -129,25 +140,39 @@ header.homepage{
 	text-align: center;
 }
 
-.dropdown-menu:not(.guest){
-	left: -2%;
+.card-title:not(.landing){
+	padding: 0.5em;
+	background-color: blanchedalmond;
 }
 
-.index.card{
+.card.index{
 	border-radius: 0.75em;
 	margin: 1em;
+	text-align: center;
+}
+
+.dropdown-menu:not(.guest){
+	left: -2%;
 }
 
 .dropdown-menu.guest{
 	left: -75%;
 }
 
-
+.sitemap{
+	background-color: #2F4F4F;
+	padding: 5px;
+}
 
 @media (min-width: 1200px){
 	.form-inline .input-group {
 		width: 300px;
 		margin-left: 30px;
+	}
+	.sitemap{
+		background-color: #2F4F4F;
+		padding: 5px;
+		height: 50vh;
 	}
 }
 @media (max-width: 1199px){
@@ -158,7 +183,6 @@ header.homepage{
 	.input-group {
 		width: 100%;
 	}
-	
 }
 
 
@@ -195,7 +219,7 @@ footer{
 }
   
 
-h2{
+h2:not(.card-title){
 	padding-top: 2em;
 	text-align: center;
 }
@@ -272,8 +296,14 @@ span.psw {
   }
   .cancelbtn {
 	 width: 100%;
-
   }
 }
-
+@media screen and (max-width: 720px) {
+	.banner{
+	  height: 50vh;
+	  }
+	  .maps{
+	  height: 50vh;
+	  }
+  }
 
