@@ -1,8 +1,7 @@
-
-/* .row{
+.row{
   padding: 0!important;
   margin: 0!important;
-} */
+}
 
 /* Start of CSS Content */
 label {
@@ -22,13 +21,10 @@ input, textarea {
   box-shadow: 5px 5px 2px 2px #696969;
 }
 h4{
-	/* padding-top: 1em; */
 	text-align: center;
 }
 
 input[type=text], input[type=password] {
-  /* padding: 12px 20px; */
-  /* margin: 8px 0; */
   /* display: inline-block; */
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -37,8 +33,6 @@ input[type=text], input[type=password] {
 button {
   background-color: #4CAF50;
   color: white;
-  /* padding: 14px 20px; */
-  /* margin: 8px 0; */
   cursor: pointer;
 }
   
@@ -48,13 +42,7 @@ button:hover {
 
 .cancelbtn {
   width: auto;
-  /* padding: 10px 18px; */
   background-color: #f44336;
-}
-
-.container {
-  /* padding: 16px; */
-  
 }
 
 span.psw {
