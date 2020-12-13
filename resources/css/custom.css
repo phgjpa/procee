@@ -54,6 +54,10 @@ body {
 	color: #a0a5b1;
 	font-size: 19px;
 }
+nav{
+	position: fixed!important;
+	width: -webkit-fill-available;
+}
 .navbar .nav-item i {
 	font-size: 18px;
 }
