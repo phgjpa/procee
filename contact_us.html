@@ -61,28 +61,31 @@
       </nav>
     </header>
     <main role="main">
-        
-      <div id="after_submit"></div>
-      <form id="contact_form col-md-8 justify-content-center" action="#" method="POST" enctype="multipart/form-data">
-        <div class="row">
-          <label class="required col-md-" for="name">Name  :</label><br />
-          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-          <span id="name_validation" class="error_message"></span>
-        </div>
-        <div class="row">
-          <label class="required" for="email">Email  :</label><br />
-          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-          <span id="email_validation" class="error_message"></span>
-        </div>
-        <div class="row">
-          <label class="required" for="message">Send Message  :</label><br />
-          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-          <span id="message_validation" class="error_message"></span>
-        </div>
-          
-          <input id="submit_button" type="submit" value="Send email" />
-      </form>
-
+      <div id="after_submit" class="container col-md-6 justify-content-center">
+        <form id="justify-content-center" action="#" method="POST" enctype="multipart/form-data">
+          <div class="row">
+            <label class="required col-md-3" for="name">Name  :</label>
+            <input id="name" class="input col-md-9" name="name" type="text" value="" size="30">
+            <span id="name_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required col-md-3" for="email">Email  :</label>
+            <input id="email" class="input col-md-9" name="email" type="text" value="" size="30">
+            <span id="email_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required col-md-3" for="message">Send Message  :</label>
+            <textarea id="message" class="input col-md-9" name="message" rows="7" cols="30"></textarea>
+            <span id="message_validation" class="error_message"></span>
+          </div>
+          <div class="row col-md-3">
+            
+          </div>
+          <div class="row justify-content-center col-md-9 float-right">
+            <input id="submit_button" type="submit" value="Send email">
+          </div>      
+        </form>
+      </div>
     </main>
     <footer>Copyright 2020. Ma'am Procee's Torta</footer>
 </body>
