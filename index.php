@@ -23,6 +23,16 @@
 
 </head>
 <body>
+  <?php
+  // Initialize the session
+  session_start();
+  
+  // Check if the user is logged in, if not then redirect him to login page
+  if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+      $_SESSION["username"] = "Login/Signup";
+      exit;
+  }
+  ?>
   <header class="homepage">
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
       <a href="#" class="navbar-brand"><img src="resources/images/logo.png" alt="Logo"></i>Dalaguete</a>
@@ -47,7 +57,7 @@
           <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
           <a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
           <div class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> Paula Wilson <b class="caret"></b></a>
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> Login/Signup <b class="caret"></b></a>
             <div class="dropdown-menu">
               <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
               <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="resources/css/custom.css">
-    <link rel="stylesheet" href="resources/css/contact.css">
+    <link rel="stylesheet" href="resources/css/signup.css">
     
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -31,7 +31,7 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
+$username = $fname = $lname = $mobile = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted
@@ -162,6 +162,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="firstname" class="form-control">
+            </div> 
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="lastname" class="form-control">
+            </div> 
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="text" name="mobile" class="form-control">
+            </div> 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
