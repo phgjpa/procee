@@ -141,10 +141,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
           </form>
           <div class="navbar-nav ml-auto">
-            <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
-            <a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
             <div class="nav-item dropdown">
-              <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> Paula Wilson <b class="caret"></b></a>
+              <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> USER <b class="caret"></b></a>
               <div class="dropdown-menu">
                 <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
                 <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>
