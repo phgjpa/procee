@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css" />
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,66 +16,45 @@
     <link rel="stylesheet" href="resources/css/homepage.css">
     
     <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="resources/jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  
+
 </head>
 <body>
-  <?php
-  // Initialize the session
-  session_start();
   
-  // Check if the user is logged in, if not then redirect him to login page
-  if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-      $_SESSION["username"] = "Login/Signup";
-      exit;
-  }
-  ?>
   <header class="homepage">
-    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <nav class="navbar row navbar-expand-xl navbar-light bg-light">
       <a href="#" class="navbar-brand"><img src="resources/images/logo.png" alt="Logo"></i>Dalaguete</a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 <!-- Collection of nav links, forms, and other content for toggling -->
       <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-        <div class="navbar-nav">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="#" class="nav-item nav-link">Buy Now</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="contact_us.html" class="nav-item nav-link">Contact Us</a>
+        <div class="navbar-nav col-md-8 justify-content-center">
+          <a href="index.php" class="nav-item nav-link active">Home</a>
+          <a href="shop.php" class="nav-item nav-link">Buy Now</a>
+          <a href="contact_us.php" class="nav-item nav-link">Contact Us</a>
+          <a href="about.php" class="nav-item nav-link">About Us</a>
         </div>
-        <form class="navbar-form form-inline">
+        <form class="navbar-form form-inline float-md-right col-md-4">
           <div class="input-group search-box">								
-            <input type="text" id="search" class="form-control" placeholder="Search by Name">
+            <input type="text" id="search" class="form-control" placeholder="Enter Order ID to search">
             <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
           </div>
         </form>
-        <div class="navbar-nav ml-auto">
-          <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
-          <a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
-          <div class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> Login/Signup <b class="caret"></b></a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
-              <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>
-              <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></a>
-            </div> 
-          </div>
-        </div>
       </div>
     </nav>
     <div class="card head col-md-4">
       <div class="card-body">
         <h1 class="card-title landing">It tastes home</h1>
-        <h3 class="card-subtitle mb-2 text-muted">Wherever you are from</h3>
+        <h3 class="card-subtitle mb-2">Wherever you are from</h3>
         <h6 class="card-text">Have a taste of Dalaguete's pride. Our very own delicacy is made with love. Perfect for pasalubong for your family and friends. </h6>
       </div>
-      <button type = "button"> Buy Now!
+      <button onclick="window.location.href='shop.php';" id="buy" type = "button">Buy Now!
       </button>
     </div>
   </header>
@@ -83,20 +62,32 @@
     <div class="row justify-content-md-center">
       <div class="card index col-md-3">
         <div class="card-body">
-          <h2 class="card-title">Eggs straight from the farm</h2>
-          <h6 class="card-text">Have a taste of Dalaguete's pride. Our very own delicacy is made with love. Perfect for pasalubong for your family and friends. </h6>
+          <div class="card-title">
+            <h2>Eggs straight from the farm</h2>
+          </div>
+          <div class="card-text">
+            <h6>Have a taste of Dalaguete's pride. Our very own delicacy is made with love. Perfect for pasalubong for your family and friends. </h6>
+          </div>
         </div>
       </div>
       <div class="card index col-md-3">
         <div class="card-body">
-          <h2 class="card-title">Generations of chefs</h2>
-          <h6 class="card-text">A delicious recipe passed through generations. Have a taste of the recipe that withstood time.</h6>
+          <div class="card-title">
+            <h2>Generations of chefs</h2>
+          </div>
+          <div class="card-text">
+            <h6>A delicious recipe passed through generations. Have a taste of the recipe that withstood time.</h6>
+          </div>          
         </div>
       </div>
       <div class="card index col-md-3">
         <div class="card-body">
-          <h2 class="card-title">A friendly face awaits you</h2>
-          <h6 class="card-text">We take pride of our personel's hospitality in assisting our customers. We want you to feel at home.</h6>
+          <div class="card-title">
+            <h2>A friendly face awaits you</h2>
+          </div>
+          <div class="card-text">
+            <h6>We take pride of our personel's hospitality in assisting our customers. We want you to feel at home.</h6>
+          </div>
         </div>
       </div>
     </div>

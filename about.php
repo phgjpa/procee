@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="resources/css/custom.css">
     
     <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="resources/jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -30,32 +30,18 @@
       </button>
 <!-- Collection of nav links, forms, and other content for toggling -->
       <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-        <div class="navbar-nav">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="#" class="nav-item nav-link">Buy Now</a>
-          <a href="about.html" class="nav-item nav-link active">About</a>
-          <a href="contact_us.html" class="nav-item nav-link">Contact Us</a>
+        <div class="navbar-nav col-md-8 justify-content-center">
+          <a href="index.php" class="nav-item nav-link">Home</a>
+          <a href="shop.php" class="nav-item nav-link">Buy Now</a>
+          <a href="contact_us.php" class="nav-item nav-link">Contact Us</a>
+          <a href="about.php" class="nav-item nav-link active">About Us</a>
         </div>
-        <form class="navbar-form form-inline">
+        <form class="navbar-form form-inline float-md-right col-md-4">
           <div class="input-group search-box">								
-            <input type="text" id="search" class="form-control" placeholder="Search by Name">
+            <input type="text" id="search" class="form-control" placeholder="Enter Order ID to search">
             <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
           </div>
         </form>
-        <div class="navbar-nav ml-auto">
-          <a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
-          <a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
-          <div class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><i class="fa fa-user" aria-hidden="true"></i> Paula Wilson <b class="caret"></b></a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
-              <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>
-              <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></a>
-            </div> 
-          </div>
-        </div>
       </div>
     </nav>
   </header>
