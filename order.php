@@ -60,7 +60,6 @@
 
             // echo “Your information was added to the database.”;
 
-            // mysql_close($connect); 
             
             $query_insert = 'INSERT INTO orders (cname, mobile, quantityRegular, subtotalRegular, quantityCheese, subtotalCheese, total) VALUES ("'.$_SESSION['cname'].'","'.$_SESSION['mobile'].'","'.$_SESSION['quantity_regular'].'","'.$_SESSION['subtotal_regular'].'","'.$_SESSION['quantity_cheese'].'","'.$_SESSION['subtotal_cheese'].'","'.$_SESSION['order_total'].'");'; 
             // $query_get_orderid = 'SELECT MAX orderId from orders';
