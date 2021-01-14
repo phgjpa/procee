@@ -19,7 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
-</head>
+
+  </head>
 <body>
   <header>
     <nav class="navbar row navbar-expand-xl navbar-light bg-light">
@@ -44,33 +45,22 @@
       </div>
     </nav>
   </header>
-  <main role="main">
-    <div id="after_submit" class="container col-md-6 justify-content-center">
-      <form id="justify-content-center" action="submit.php" method="POST" enctype="multipart/form-data">
-        <div class="row">
-          <label class="required col-md-3" for="name">Name  :</label>
-          <input id="name" class="input col-md-9" name="name" type="text" value="" size="30">
-          <span id="name_validation" class="error_message"></span>
-        </div>
-        <div class="row">
-          <label class="required col-md-3" for="email">Email  :</label>
-          <input id="email" class="input col-md-9" name="email" type="text" value="" size="30">
-          <span id="email_validation" class="error_message"></span>
-        </div>
-        <div class="row">
-          <label class="required col-md-3" for="message">Send Message  :</label>
-          <textarea id="message" class="input col-md-9" name="message" rows="7" cols="30"></textarea>
-          <span id="message_validation" class="error_message"></span>
-        </div>
-        <div class="row col-md-3">
-          
-        </div>
-        <div class="row justify-content-center col-md-9 float-right">
-          <input id="submit_button" type="submit" value="Send email">
-        </div>      
-      </form>
-    </div>
-  </main>
-  <footer>Copyright 2020. Ma'am Procee's Torta</footer>
+    <?php
+        
+        require_once "config.php";
+
+        $query = 'INSERT INTO support (fullname, email, smessage) VALUES ("'.$_POST['name'].'","'.$_POST['email'].'","'.$_POST['message'].'");'; 
+        if($link->query($query)=== TRUE){
+            echo "<h2 style=\"padding-top:100px;\"> Thank you for contacting us. We will send you an email.</h2>";
+        }
+        else{
+            echo "Error: ". $query . "<br>" . $link->error;
+        }
+        $link->close();
+    ?>
+    <main role="main">
+        
+    </main>
+    <footer>Copyright 2020. Ma'am Procee's Torta</footer>
 </body>
 </html>

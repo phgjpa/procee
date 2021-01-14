@@ -50,99 +50,105 @@
     </header>
     <main role="main">
         
-      
+        <?php
+            require "cart.php";
+
+            session_start();
+            $_SESSION['quantity_regular']=(int)$_POST['quantity_regular'];
+            $_SESSION['subtotal_regular']=(int)$_POST['quantity_regular']*20;
+            $_SESSION['quantity_cheese']=(int)$_POST['quantity_cheese'];
+            $_SESSION['subtotal_cheese']=(int)$_POST['quantity_cheese']*25;
+            $_SESSION['order_total']=(int)$_POST['total'];
+        ?>
         
         <section class="col-md-6 mx-auto">
-          <div class="row justify-content-center">
-            <h2>CHECKOUT</h2>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <p>Note! You will receive a call from our team for further confirmation of your order.</p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <form action="" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="row justify-content-center">
-              <div class="col-md-2"></div>
-              <div class="row col-md-8 form-proper">
-                <div class="col-2">
-                    <p>Name</p>
-                </div>
-                <div class="col-10">
-                    <input type="text" id="name" name="name" placeholder="Type here">
-                </div>
-              </div>
-              <div class="col-md-2"></div>
+                <h2>CHECKOUT</h2>
             </div>
             <div class="row justify-content-center">
-              <div class="col-md-2"></div>
-              <div class="row col-md-8 form-proper">
-                <div class="col-2">
-                    <p>Mobile</p>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <p>Note! You will receive a call from our team for further confirmation of your order. Incorrect Numbers will be denied.</p>
                 </div>
-                <div class="col-10">
-                    <input type="text" id="mobile" name="mobile" placeholder="Type here">
-                </div>
-              </div>
-              <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-md-2"></div>
-              <div class="row col-md-8 form-proper">
-                <div class="col-4">
-                    <p>Regular Torta</p>
-                </div>
-                <div class="col-8">
-                    <input type="text" id="mobile" name="mobile" disabled value="<?php echo $_POST["quantity_regular"]; ?>">
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-2"></div>
-              <div class="row col-md-8 form-proper">
-                <div class="col-4">
-                    <p>Cheesy Torta</p>
-                </div>
-                <div class="col-8">
-                    <input type="text" id="mobile" name="mobile" disabled value="<?php echo $_POST["quantity_cheese"]; ?>">
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
-
-
-
-            <div class="row justify-content-center">
+            <form method="POST" action="order.php">
+                <div class="row justify-content-center">
                 <div class="col-md-2"></div>
-                <div class="row col-md-8">
-                    <div class="col-md-3">
-                        <input type="button" value="cancel" onclick="window.location.href='shop.php';">
+                <div class="row col-md-8 form-proper">
+                    <div class="col-2">
+                        <p>Name</p>
                     </div>
-                    <div class="row col-md-6 total_box">
-                        <div class="col-md-4">
-                        <h5 style="float: right;">Total</h5>
+                    <div class="col-10">
+                        <input type="text" id="name" name="name" placeholder="Type here">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                </div>
+                <div class="row justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="row col-md-8 form-proper">
+                    <div class="col-2">
+                        <p>Mobile</p>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" id="mobile" name="mobile" placeholder="Type here">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                </div>
+                <div class="row justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="row col-md-8 form-proper">
+                    <div class="col-4">
+                        <p>Regular Torta</p>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="quantity_regular" name="quantity_regular" disabled value="<?php echo $_SESSION['quantity_regular']; ?>">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                </div>
+                <div class="row justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="row col-md-8 form-proper">
+                    <div class="col-4">
+                        <p>Cheesy Torta</p>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="quantity_cheese" name="quantity_cheese" disabled value="<?php echo $_SESSION["quantity_cheese"]; ?>">
+                    </div>
+                    
+                </div>
+                <div class="col-md-2"></div>
+                </div>
+
+
+
+                <div class="row justify-content-center">
+                    <div class="col-md-2"></div>
+                    <div class="row col-md-8">
+                        <div class="col-md-3">
+                            <input type="button" value="cancel" onclick="window.location.href='shop.php';">
                         </div>
-                        <div class="col-md-5">
-                        <h4 id="total" style="float: right;"><?php echo $_POST["total"] ?></h4>
+                        <div class="row col-md-6 total_box">
+                            <div class="col-md-4">
+                            <h5 style="float: right;">Total</h5>
+                            </div>
+                            <div class="col-md-5">
+                            <h4 id="total" style="float: right;"><?php echo $_SESSION["order_total"] ?></h4>
+                            </div>
+                            <div class="col-md-3">
+                            <p style="float: left;">Php</p>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                        <p style="float: left;">Php</p>
+                            <input type="submit" id="checkout" value="CHECKOUT" style="width: fit-content;">  
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <input type="submit" id="checkout" value="CHECKOUT" style="width: fit-content;">  
-                    </div>
+                    <div class="col-md-2"></div>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
-
-
-
-          </form>
-          
+            </form>          
         </section>
     </main>
     <footer>Copyright 2020. Ma'am Procee's Torta</footer>
