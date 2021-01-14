@@ -38,7 +38,7 @@
             <a href="contact_us.php" class="nav-item nav-link">Contact Us</a>
             <a href="about.php" class="nav-item nav-link">About Us</a>
             </div>
-            <form class="navbar-form form-inline float-md-right col-md-4">
+            <form class="navbar-form form-inline float-md-right col-md-4" style="margin: auto;">
             <div class="input-group search-box">								
                 <input type="text" id="search" class="form-control" placeholder="Enter Order ID to search">
                 <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
@@ -48,46 +48,34 @@
         </nav>
     </header>
 
-    
-    <?php  
-    require "cart.php";
-    session_start();
-    $_SESSION['cname'] = $_POST['name'];
-    $_SESSION['mobile'] = $_POST['mobile'];
+    <main role="main"> 
 
-    // $user_info = “INSERT INTO orders (name, mobile, quantityRegular, subtotalRegular, quantityCheese, subtototalCheese, total) VALUES ('$_POST[name]', '$_POST[mobile]', '$_POST[quantity_regular]', '$_POST[subtotal_regular]', '$_POST[quantity_cheese]', '$_POST[subtotal_chhese]', '$_POST[total]')”; if (!mysql_query($user_info, $connect)) { die('Error: ' . mysql_error()); }
+        <?php  
+            require "cart.php";
+            session_start();
+            $_SESSION['cname'] = $_POST['name'];
+            $_SESSION['mobile'] = $_POST['mobile'];
 
-    // echo “Your information was added to the database.”;
+            // $user_info = “INSERT INTO orders (name, mobile, quantityRegular, subtotalRegular, quantityCheese, subtototalCheese, total) VALUES ('$_POST[name]', '$_POST[mobile]', '$_POST[quantity_regular]', '$_POST[subtotal_regular]', '$_POST[quantity_cheese]', '$_POST[subtotal_chhese]', '$_POST[total]')”; if (!mysql_query($user_info, $connect)) { die('Error: ' . mysql_error()); }
 
-    // mysql_close($connect); 
-    
-    $query_insert = 'INSERT INTO orders (cname, mobile, quantityRegular, subtotalRegular, quantityCheese, subtotalCheese, total) VALUES ("'.$_SESSION['cname'].'","'.$_SESSION['mobile'].'","'.$_SESSION['quantity_regular'].'","'.$_SESSION['subtotal_regular'].'","'.$_SESSION['quantity_cheese'].'","'.$_SESSION['subtotal_cheese'].'","'.$_SESSION['order_total'].'");'; 
-    $query_get_orderid = 'SELECT MAX orderId from orders';
-    $result = $link->query($query_get_orderid);
-    if($link->query($query_insert)=== TRUE){
-        echo "<h2>New record created successfully.<br>Your order ID is: </h2>";
-        echo $msg;
-    }
-    else{
-        echo "Error: ". $query . "<br>" . $link->error;
-    }
-    $link->close();
-    ?>
-    <h2 id="order_id">Order ID: </h2>
+            // echo “Your information was added to the database.”;
 
-    <?php
-    $sql = "SELECT MAX('orderId') FROM `orders`";
-		$query = $link->prepare($sql);
-		$query->execute();
- 
-		while($fetch = $query->fetch()){
-            echo $fetch['orderId'];
-        }
+            
+            $query_insert = 'INSERT INTO orders (cname, mobile, quantityRegular, subtotalRegular, quantityCheese, subtotalCheese, total) VALUES ("'.$_SESSION['cname'].'","'.$_SESSION['mobile'].'","'.$_SESSION['quantity_regular'].'","'.$_SESSION['subtotal_regular'].'","'.$_SESSION['quantity_cheese'].'","'.$_SESSION['subtotal_cheese'].'","'.$_SESSION['order_total'].'");'; 
+            // $query_get_orderid = 'SELECT MAX orderId from orders';
+            // $result = $link->query($query_get_orderid);
+            if($link->query($query_insert)=== TRUE){
+                $last_id = $link->insert_id;
+                echo "<h2>New record created successfully. Last inserted ID is: " . $last_id."</h2>";
+            }
+            else{
+                echo "Error: ". $query . "<br>" . $link->error;
+            }
+            $link->close();
 
-    ?>
-    
+        ?>
 
-    
+    </main>
 
 </body>
 </html>
