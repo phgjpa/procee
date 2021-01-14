@@ -66,7 +66,7 @@
             // $result = $link->query($query_get_orderid);
             if($link->query($query_insert)=== TRUE){
                 $last_id = $link->insert_id;
-                echo "<h2>New record created successfully. Last inserted ID is: " . $last_id."</h2>";
+                $msg = "<h2>Order Successful. Your Order ID is: " . $last_id."</h2>";
             }
             else{
                 echo "Error: ". $query . "<br>" . $link->error;
@@ -74,6 +74,12 @@
             $link->close();
 
         ?>
+
+        <section class="row col-md-8 mx-auto">
+            <div class="col-md-6 mx-auto">
+                <?php echo $msg; ?>
+            </div>
+        </section>
 
     </main>
 
