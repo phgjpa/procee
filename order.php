@@ -1,8 +1,27 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ma'am Procee's Torta</title>
+
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="resources/css/custom.css">
+    <link rel="stylesheet" href="resources/css/checkout.css">
+    
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="resources/jquery/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="resources/js/shop.js"></script>
+    
 </head>
 <body>
     <header>
@@ -15,8 +34,8 @@
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
             <div class="navbar-nav col-md-8 justify-content-center">
             <a href="index.php" class="nav-item nav-link">Home</a>
-            <a href="shop.php" class="nav-item nav-link">Buy Now</a>
-            <a href="contact_us.php" class="nav-item nav-link active">Contact Us</a>
+            <a href="shop.php" class="nav-item nav-link active">Buy Now</a>
+            <a href="contact_us.php" class="nav-item nav-link">Contact Us</a>
             <a href="about.php" class="nav-item nav-link">About Us</a>
             </div>
             <form class="navbar-form form-inline float-md-right col-md-4">
@@ -44,15 +63,31 @@
     
     $query_insert = 'INSERT INTO orders (cname, mobile, quantityRegular, subtotalRegular, quantityCheese, subtotalCheese, total) VALUES ("'.$_SESSION['cname'].'","'.$_SESSION['mobile'].'","'.$_SESSION['quantity_regular'].'","'.$_SESSION['subtotal_regular'].'","'.$_SESSION['quantity_cheese'].'","'.$_SESSION['subtotal_cheese'].'","'.$_SESSION['order_total'].'");'; 
     $query_get_orderid = 'SELECT MAX orderId from orders';
+    $result = $link->query($query_get_orderid);
     if($link->query($query_insert)=== TRUE){
-        $msg = "<h2>New record created successfully.<br>Your order ID is: ".$link($query_get_orderid)."</h2>";
+        echo "<h2>New record created successfully.<br>Your order ID is: </h2>";
+        echo $msg;
     }
     else{
         echo "Error: ". $query . "<br>" . $link->error;
     }
     $link->close();
     ?>
+    <h2 id="order_id">Order ID: </h2>
 
+    <?php
+    $sql = "SELECT MAX('orderId') FROM `orders`";
+		$query = $link->prepare($sql);
+		$query->execute();
+ 
+		while($fetch = $query->fetch()){
+            echo $fetch['orderId'];
+        }
+
+    ?>
+    
+
+    
 
 </body>
 </html>
