@@ -48,7 +48,7 @@
     <div id="after_submit" class="container col-md-6 justify-content-center">
       <form id="justify-content-center" action="submit.php" method="POST" enctype="multipart/form-data">
         <div class="row">
-          <label class="required col-md-3" for="name">Name EDIT  :</label>
+          <label class="required col-md-3" for="name">Name EDIT NA:</label>
           <input id="name" class="input col-md-9" name="name" type="text" value="" size="30">
           <span id="name_validation" class="error_message"></span>
         </div>
