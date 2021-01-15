@@ -45,6 +45,7 @@
       </div>
     </nav>
   </header>
+  <main role="main">
   <section id="cover" class="min-vh-100">
     <div id="cover-caption">
       <div class="container">
@@ -73,6 +74,7 @@
       </div>
     </div>
   </section>
+</main>
   <footer>Copyright 2020. Ma'am Procee's Torta</footer>
 </body>
 </html>
