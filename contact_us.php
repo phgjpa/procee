@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="resources/css/contact_us_custom.css"> 
+    <link rel="stylesheet" href="resources/css/custom.css"> 
     <link rel="stylesheet" href="resources/css/contact_us.css">
     
     <!-- JS, Popper.js, and jQuery -->
@@ -45,7 +45,7 @@
       </div>
     </nav>
   </header>
-  <section id="cover" class="min-vh-100">
+  <section id="cover" class="min-vh-100 style="background-image: url(../images/torta.png)">
     <div id="cover-caption">
       <div class="container">
         <div class="row text-white">
