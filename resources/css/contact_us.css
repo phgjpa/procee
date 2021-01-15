@@ -4,6 +4,7 @@
 	display: flex;   
 	align-items: center; 
 	background-size: cover;
+ background-attachment:fixed;
 	position: relative;
 }
 #cover-caption{
