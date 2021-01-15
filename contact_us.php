@@ -31,7 +31,7 @@
       <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
         <div class="navbar-nav col-md-8 justify-content-center">
           <a href="index.php" class="nav-item nav-link">Home</a>
-          <a href="shop.php" class="nav-item nav-link">Buy Now</a>
+          <a href="shop.php" class="nav-item nav-link">Buy Now</a> 
           <a href="contact_us.php" class="nav-item nav-link active">Contact Us</a>
           <a href="about.php" class="nav-item nav-link">About Us</a>
         </div>
@@ -88,11 +88,11 @@
                   <input type="text" class="form-control" placeholder="Your Name">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only">Email</label>
+                  <label class="sr-only">Email:</label>
                   <input type="text" class="form-control" placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
-                  <label for="comment">Your Message</label>
+                  <label for="comment">Your Message:</label>
                   <textarea class="form-control" rows="5" id="comment"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg">Send Your Message</button>
