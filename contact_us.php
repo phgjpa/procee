@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Contact Us</title> 
-
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css" />
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="resources/css/custom.css"> 
     <link rel="stylesheet" href="resources/css/contact_us.css"> 
     
@@ -37,7 +35,7 @@
           <a href="about.php" class="nav-item nav-link">About Us</a>
         </div>
         <form class="navbar-form form-inline float-md-right col-md-4">
-          <div class="input-group search-box">								
+          <div class="input-group search-box">                
             <input type="text" id="search" class="form-control" placeholder="Enter Order ID to search">
             <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
           </div>
