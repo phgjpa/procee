@@ -236,6 +236,8 @@ body {
 	background-color: #474e5d;
 	color: white;
 	padding-right: 10px;
+	width: inherit;
+	border-radius: 20px 20px 0 0;
   }
   
   .container {

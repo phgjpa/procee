@@ -55,7 +55,7 @@
 
           </div>
 
-          <h2 style="text-align:center">Our Team</h2>
+          <h2 style="text-align:center; width:inherit;padding:20px 10px 10px 10px">Our Team</h2>
           <div class="row">
             <div class="column">
               <div class="card">

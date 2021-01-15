@@ -45,6 +45,7 @@
       </div>
     </nav>
   </header>
+    <main>
         <?php
         require 'config.php';
         if(ISSET($_REQUEST['id'])){
