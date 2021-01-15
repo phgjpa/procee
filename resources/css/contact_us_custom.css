@@ -113,7 +113,7 @@ nav{
 }
 .banner{
 	background-image: url(../images/torta.PNG);
-	background-size: cover;
+	background-size: cover; 
 	background-position: center;
 	padding-right:2.5px
 }

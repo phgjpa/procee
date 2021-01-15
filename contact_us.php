@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contact Us</title>
+    <title>Contact Us</title> 
 
     <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="resources/font-awesome/css/font-awesome.min.css" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="resources/css/custom.css">
+    <link rel="stylesheet" href="resources/css/contact_us_custom.css"> 
     <link rel="stylesheet" href="resources/css/contact_us.css">
     
     <!-- JS, Popper.js, and jQuery -->
@@ -49,7 +49,7 @@
     <div id="cover-caption">
       <div class="container">
         <div class="row text-white">
-          <div class="col-xl-100px col-lg-100px col-md-100px col-sm-100px mx-auto text-center form p-2">
+          <div class="col-xl-100 col-lg-100 col-md-100 col-sm-100 mx-auto text-center form p-2">
             <h1 class="display-2 py-6 text-truncate">Contact Us</h1>
             <div class="px-3">
               <form action="submit.php" method="POST" class="justify-content-center"> 
