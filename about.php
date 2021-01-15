@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="resources/css/custom.css">
+    <link rel="stylesheet" href="resources/css/about.css">
     
     <!-- JS, Popper.js, and jQuery -->
     <script src="resources/jquery/jquery.js"></script>
@@ -63,7 +64,6 @@
                   <p class="title">CEO & Founder</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                   <p>jane@example.com</p>
-                  <p><button class="button">Contact</button></p>
                 </div>
               </div>
             </div>
@@ -75,7 +75,6 @@
                   <p class="title">Art Director</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                   <p>mike@example.com</p>
-                  <p><button class="button">Contact</button></p>
                 </div>
               </div>
             </div>
@@ -87,7 +86,6 @@
                   <p class="title">Designer</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                   <p>john@example.com</p>
-                  <p><button class="button">Contact</button></p>
                 </div>
               </div>
             </div>
