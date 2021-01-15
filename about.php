@@ -58,7 +58,7 @@
           <div class="row">
             <div class="column">
               <div class="card">
-                <img src="resources/" alt="Jane" style="width:100%">
+                <img src="/resources/images/person1.png" alt="Jane" style="width:100%">
                 <div class="container">
                   <h2>Jane Doe</h2>
                   <p class="title">CEO & Founder</p>
