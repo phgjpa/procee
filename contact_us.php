@@ -52,18 +52,18 @@
           <div class="col-xl-100px col-lg-100px col-md-100px col-sm-100px mx-auto text-center form p-2">
             <h1 class="display-2 py-6 text-truncate">Contact Us</h1>
             <div class="px-3">
-              <form action="" class="justify-content-center"> 
+              <form action="submit.php" method="POST" class="justify-content-center"> 
                 <div class="form-group">
                   <label class="sr-only">Name :</label>
-                  <input type="text" class="form-control" placeholder="Your Name">
+                  <input type="text" class="form-control" name="name" value="" placeholder="Your Name">
                 </div>
                 <div class="form-group">
                   <label class="sr-only">Email :</label>
-                  <input type="text" class="form-control" placeholder="example@gmail.com">
+                  <input type="text" class="form-control" name="email" value="" placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
                   <label for="comment">Your Message :</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                  <textarea class="form-control" rows="5" id="comment" name="message" value=""></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg">Send Your Message</button>
               </form>
