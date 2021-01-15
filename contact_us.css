@@ -1,4 +1,4 @@
-#cover{
+section.cover{
 	background: #222 
 	; 
 	height: 100%
@@ -7,7 +7,7 @@
 	align-items: center;
 	position: relative;
 }
-#cover-caption{
+div.cover-caption{
 	width: 100%
 	position: relative;
 	z-index: 1;
