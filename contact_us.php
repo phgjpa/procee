@@ -49,9 +49,9 @@
     <div id="cover-caption">
       <div class="container">
         <div class="row text-white">
-          <div class="col-xl-6 col-lg-8 col-md-10 col-sm-15 mx-auto text-center form p-4">
-            <h1 class="display-4 py-2 text-truncate">Contact Us</h1>
-            <div class="px-2">
+          <div class="col-xl-100 col-lg-100 col-md-100 col-sm-100 mx-auto text-center form p-2">
+            <h1 class="display-2 py-6 text-truncate">Contact Us</h1>
+            <div class="px-4">
               <form action="" class="justify-content-center"> 
                 <div class="form-group">
                   <label class="sr-only">Name :</label>
