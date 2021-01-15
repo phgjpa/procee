@@ -1,5 +1,5 @@
 #cover{
-	background: #222 url(resources/images/torta.png) no-repeat center center fixed;
+	background: #222 url(./resources/images/torta.png) no-repeat center center fixed;
 	height: 100%
 	text-align: center;
 	display: flex;   
