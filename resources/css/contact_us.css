@@ -1,14 +1,16 @@
 #cover{
-	background: #222;
+	background: #222 url(../images/torta.png) no-repeat center center fixed;
 	height: 100%
 	text-align: center;
-	display: flex;
-	align-items: center;
+	display: flex;   
+	align-items: center; 
+	background-size: cover;
 	position: relative;
 }
+
+section#cover {}
 #cover-caption{
-	width: 100%
-	position: relative;
+	width: 100%;
 	z-index: 1;
 }
 form:before{
