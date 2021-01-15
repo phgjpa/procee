@@ -22,7 +22,7 @@
     <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-   <style background-image: url(../images/torta.png)></style>
+   <style background-image: url(/images/torta.png);></style>
   <header>
     <nav class="navbar row navbar-expand-xl navbar-light bg-light">
       <a href="#" class="navbar-brand"><img src="resources/images/logo.png" alt="Logo"></i>Dalaguete</a>

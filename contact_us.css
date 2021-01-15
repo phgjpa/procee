@@ -1,6 +1,6 @@
 #cover{
 	background: #222 url(../images/torta.png) no-repeat center center fixed;
-	height: 100%
+	height: 100%;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -19,7 +19,7 @@ form:before{
 	left: 0;
 	position: absolute;  
 	top: 0;
-	width: 100%
+	width: 100%;
 	background-color: rgba(0,0,0,0.3);
 	z-index: -1;
 	border-radius: 10px; 
