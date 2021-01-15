@@ -44,37 +44,6 @@
       </div>
     </nav>
   </header>
-  <!-- <section class="row col -md 8">
-      <main role="main">
-        <div id="after_submit" class="container col-md-6 justify-content-center">
-          <form id="justify-content-center" action="submit.php" method="POST" enctype="multipart/form-data">
-            <div class="row">
-              <div class="namestyle">
-                <label class="required col-md-3" for="name">Name EDIT NA :</label>
-                <input id="name" class="input col-md-9" name="name" type="text" value="" size="30">
-                <span id="name_validation" class="error_message"></span>
-              <
-            </div>
-            <div class="row">
-              <label class="required col-md-3" for="email">Email  :</label>
-              <input id="email" class="input col-md-9" name="email" type="text" value="" size="30">
-              <span id="email_validation" class="error_message"></span>
-            </div>
-            <div class="row">
-              <label class="required col-md-3" for="message">Send Message  :</label>
-              <textarea id="message" class="input col-md-9" name="message" rows="7" cols="30"></textarea>
-              <span id="message_validation" class="error_message"></span>
-            </div>
-            <div class="row col-md-3">
-              
-            </div>
-            <div class="row justify-content-center col-md-9 float-right">
-              <input id="submit_button" type="submit" value="Send email">
-            </div>      
-          </form>
-        </div>
-      </main>
-  </section> -->
   <section id="cover" class="min-vh-100">
     <div id="cover-caption">
       <div class="container">
