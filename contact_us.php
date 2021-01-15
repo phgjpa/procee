@@ -84,15 +84,15 @@
             <div class="px-2">
               <form action="" class="justify-content-center">
                 <div class="form-group">
-                  <label class="sr-only">Name:</label>
+                  <label class="sr-only">Name :</label>
                   <input type="text" class="form-control" placeholder="Your Name">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only">Email:</label>
+                  <label class="sr-only">Email :</label>
                   <input type="text" class="form-control" placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
-                  <label for="comment">Your Message:</label>
+                  <label for="comment">Your Message :</label>
                   <textarea class="form-control" rows="5" id="comment"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg">Send Your Message</button>
