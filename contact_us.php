@@ -45,12 +45,11 @@
       </div>
     </nav>
   </header>
-  <main role="main">
   <section id="cover" class="min-vh-100">
     <div id="cover-caption">
       <div class="container">
         <div class="row text-white">
-          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+          <div class="col-xl-6 col-lg-8 col-md-10 col-sm-15 mx-auto text-center form p-4">
             <h1 class="display-4 py-2 text-truncate">Contact Us</h1>
             <div class="px-2">
               <form action="" class="justify-content-center"> 
@@ -74,7 +73,6 @@
       </div>
     </div>
   </section>
-</main>
   <footer>Copyright 2020. Ma'am Procee's Torta</footer>
 </body>
 </html>
