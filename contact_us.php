@@ -40,37 +40,69 @@
             <input type="text" id="search" class="form-control" placeholder="Enter Order ID to search">
             <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
           </div>
-        </form>
+        </form> 
       </div>
     </nav>
   </header>
-  <main role="main">
-    <div id="after_submit" class="container col-md-6 justify-content-center">
-      <form id="justify-content-center" action="submit.php" method="POST" enctype="multipart/form-data">
-        <div class="row">
-          <label class="required col-md-3" for="name">Name EDIT NA:</label>
-          <input id="name" class="input col-md-9" name="name" type="text" value="" size="30">
-          <span id="name_validation" class="error_message"></span>
+  <!-- <section class="row col -md 8">
+      <main role="main">
+        <div id="after_submit" class="container col-md-6 justify-content-center">
+          <form id="justify-content-center" action="submit.php" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <div class="namestyle">
+                <label class="required col-md-3" for="name">Name EDIT NA :</label>
+                <input id="name" class="input col-md-9" name="name" type="text" value="" size="30">
+                <span id="name_validation" class="error_message"></span>
+              <
+            </div>
+            <div class="row">
+              <label class="required col-md-3" for="email">Email  :</label>
+              <input id="email" class="input col-md-9" name="email" type="text" value="" size="30">
+              <span id="email_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+              <label class="required col-md-3" for="message">Send Message  :</label>
+              <textarea id="message" class="input col-md-9" name="message" rows="7" cols="30"></textarea>
+              <span id="message_validation" class="error_message"></span>
+            </div>
+            <div class="row col-md-3">
+              
+            </div>
+            <div class="row justify-content-center col-md-9 float-right">
+              <input id="submit_button" type="submit" value="Send email">
+            </div>      
+          </form>
         </div>
-        <div class="row">
-          <label class="required col-md-3" for="email">Email  :</label>
-          <input id="email" class="input col-md-9" name="email" type="text" value="" size="30">
-          <span id="email_validation" class="error_message"></span>
+      </main>
+  </section> -->
+  <section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+            <h1 class="display-4 py-2 text-truncate">Contact Us</h1>
+            <div class="px-2">
+              <form action="" class="justify-content-center">
+                <div class="form-group">
+                  <label class="sr-only">Name:</label>
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only">Email</label>
+                  <input type="text" class="form-control" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                  <label for="comment">Your Message</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Send Your Message</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <label class="required col-md-3" for="message">Send Message  :</label>
-          <textarea id="message" class="input col-md-9" name="message" rows="7" cols="30"></textarea>
-          <span id="message_validation" class="error_message"></span>
-        </div>
-        <div class="row col-md-3">
-          
-        </div>
-        <div class="row justify-content-center col-md-9 float-right">
-          <input id="submit_button" type="submit" value="Send email">
-        </div>      
-      </form>
+      </div>
     </div>
-  </main>
+  </section>
   <footer>Copyright 2020. Ma'am Procee's Torta</footer>
 </body>
 </html>
