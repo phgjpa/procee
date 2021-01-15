@@ -40,10 +40,10 @@
           <a href="contact_us.php" class="nav-item nav-link">Contact Us</a>
           <a href="about.php" class="nav-item nav-link">About Us</a>
         </div>
-        <form class="navbar-form form-inline float-md-right col-md-4">
+        <form class="navbar-form form-inline float-md-right col-md-4" action="search.php" method="GET">
           <div class="input-group search-box">								
-            <input type="text" id="search" class="form-control" placeholder="Enter Order ID to search">
-            <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+            <input type="text" id="search" name="query" class="form-control" placeholder="Enter Order ID to search">
+            <span class="input-group-addon" type="submit" value="Search"><i class="material-icons">&#xE8B6;</i></span>
           </div>
         </form>
       </div>
