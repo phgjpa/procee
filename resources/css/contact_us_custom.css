@@ -1,5 +1,5 @@
 body {
-	background: #222 url('project\resources\images\torta.PNG');
+	background: #222 ;
 } 
 main{
 	padding-top: 100px;
@@ -112,7 +112,7 @@ nav{
 	padding-left: 50px;
 }
 .banner{
-	background-image: url(../images/banner.PNG);
+	background-image: url(../images/torta.PNG);
 	background-size: cover;
 	background-position: center;
 	padding-right:2.5px
