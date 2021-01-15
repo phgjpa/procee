@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="resources/css/custom.css"> 
-    <link rel="stylesheet" href="resources/css/contact_us.css">
+    <link rel="stylesheet" href="resources/css/contact_us.css"> 
     
     <!-- JS, Popper.js, and jQuery -->
     <script src="resources/jquery/jquery.js"></script>
@@ -22,6 +22,7 @@
     <script src="resources/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+   <style background-image: url(../images/torta.png)></style>
   <header>
     <nav class="navbar row navbar-expand-xl navbar-light bg-light">
       <a href="#" class="navbar-brand"><img src="resources/images/logo.png" alt="Logo"></i>Dalaguete</a>
@@ -45,25 +46,25 @@
       </div>
     </nav>
   </header>
-  <section id="cover" class="min-vh-100 style="background-image: url(../images/torta.png)">
+  <section id="cover" class="min-vh-100" >
     <div id="cover-caption">
       <div class="container">
         <div class="row text-white">
-          <div class="col-xl-100 col-lg-100 col-md-100 col-sm-100 mx-auto text-center form p-2">
+          <div class="col-xl-20 col-lg-30 col-md-30 col-sm-30 mx-auto text-center form p-2">
             <h1 class="display-2 py-6 text-truncate">Contact Us</h1>
-            <div class="px-3">
-              <form action="submit.php" method="POST" class="justify-content-center"> 
+            <div class="px-4">
+              <form action="" class="justify-content-center"> 
                 <div class="form-group">
                   <label class="sr-only">Name :</label>
-                  <input type="text" class="form-control" name="name" value="" placeholder="Your Name">
+                  <input type="text" class="form-control" placeholder="Your Name">
                 </div>
                 <div class="form-group">
                   <label class="sr-only">Email :</label>
-                  <input type="text" class="form-control" name="email" value="" placeholder="example@gmail.com">
+                  <input type="text" class="form-control" placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
                   <label for="comment">Your Message :</label>
-                  <textarea class="form-control" rows="5" id="comment" name="message" value=""></textarea>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg">Send Your Message</button>
               </form>
